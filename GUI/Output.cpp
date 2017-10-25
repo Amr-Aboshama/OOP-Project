@@ -5,7 +5,6 @@ Output::Output()
 {
 	//Initialize user interface parameters
 	UI.InterfaceMode = MODE_DRAW;
-	
 	UI.width = 1250;
 	UI.height = 650;
 	UI.wx = 5;
@@ -163,6 +162,29 @@ void Output::DrawRect(Point P1, Point P2, GfxInfo RectGfxInfo, bool selected) co
 	
 }
 
+void Output::DrawLine(Point P1, Point P2, GfxInfo LineGfxInfo, bool selected) const
+{
+	color DrawingClr;
+	if (selected)
+		DrawingClr = UI.HighlightColor; //Figure should be drawn highlighted
+	else
+		DrawingClr = LineGfxInfo.DrawClr;
+
+	pWind->SetPen(DrawingClr, 1);
+	drawstyle style;
+	if (LineGfxInfo.isFilled)
+	{
+		style = FILLED;
+		pWind->SetBrush(LineGfxInfo.FillClr);
+	}
+	else
+		style = FRAME;
+
+
+	pWind->DrawLine(P1.x, P1.y, P2.x, P2.y, style);
+
+
+}
 
 //////////////////////////////////////////////////////////////////////////////////////////
 Output::~Output()
