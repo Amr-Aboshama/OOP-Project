@@ -12,6 +12,9 @@ enum ActionType //The actions supported (you can add more if needed)
 	DRAW_CIRC,		//Draw Circle
 	CHNG_DRAW_CLR,	//Change the drawing color
 	CHNG_FILL_CLR,	//Change the filling color
+	PLAY_TYPE,
+	PLAY_COLOR,
+	PLAY_TYPE_COLOR,
 	DEL,			//Delete a figure(s)
 	MOVE,			//Move a figure(s)
 	SAVE,			//Save the whole graph to a file

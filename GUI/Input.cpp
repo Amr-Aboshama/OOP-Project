@@ -59,10 +59,10 @@ ActionType Input::GetUserAction() const
 			case ITM_FILL_COLOR: return CHNG_FILL_CLR;
 			case ITM_DELETE: return DEL;
 			case ITM_MOVE: return MOVE;
-			case ITM_SAVE: return SAVE;
-			case ITM_LOAD: return LOAD;
-			case ITM_PLAY_MODE: return TO_PLAY;
-			case ITM_EXIT: return EXIT;	
+			case ITM_SAVE_FILE: return SAVE;
+			case ITM_LOAD_FILE: return LOAD;
+			case ITM_TO_PLAY: return TO_PLAY;
+			case DRAW_ITM_EXIT: return EXIT;	
 		
 			
 			default: return EMPTY;	//A click on empty place in desgin toolbar
@@ -114,7 +114,6 @@ ActionType Input::GetUserAction() const
 	return TO_PLAY;	//just for now. This should be updated
 }
 
-}
 /////////////////////////////////
 	
 Input::~Input()
