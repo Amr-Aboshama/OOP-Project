@@ -22,6 +22,10 @@ public:
 	void DrawRect(Point P1, Point P2, GfxInfo RectGfxInfo, bool selected=false) const;  //Draw a rectangle
 	
 	///Make similar functions for drawing all other figures.
+	void DrawCirc(Point P1, Point P2, GfxInfo CircGfxInfo, bool selected = false) const; //Draw a circle
+	void DrawLine(Point P1, Point P2, GfxInfo LineGfxInfo, bool selected = false) const; //Draw a line
+	void DrawTri(Point P1, Point P2, Point P3, GfxInfo TriGfxInfo, bool selected = false) const; //Draw a Triangle
+
 	
 	void PrintMessage(string msg) const;	//Print a message on Status bar
 
