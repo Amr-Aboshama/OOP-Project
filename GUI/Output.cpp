@@ -87,10 +87,10 @@ void Output::CreateDrawToolBar() const
 	MenuItemImages[ITM_FILL_COLOR] = "images\\MenuItems\\Fill_color.jpg";
 	MenuItemImages[ITM_DELETE] = "images\\MenuItems\\Delete.jpg";
 	MenuItemImages[ITM_MOVE] = "images\\MenuItems\\Move.jpg";
-	MenuItemImages[ITM_SAVE] = "images\\MenuItems\\Save.jpg";
-	MenuItemImages[ITM_LOAD] = "images\\MenuItems\\Load.jpg";
+	MenuItemImages[ITM_SAVE_FILE] = "images\\MenuItems\\Save.jpg";
+	MenuItemImages[ITM_LOAD_FILE] = "images\\MenuItems\\Load.jpg";
 	MenuItemImages[ITM_TO_PLAY] = "images\\MenuItems\\Switch1.jpg";
-	MenuItemImages[ITM_EXIT] = "images\\MenuItems\\Exit.jpg";
+	MenuItemImages[DRAW_ITM_EXIT] = "images\\MenuItems\\Exit.jpg";
 
 	//TODO: Prepare images for each menu item and add it to the list
 
@@ -116,7 +116,7 @@ void Output::CreatePlayToolBar() const
 	MenuItemImages[ITM_COLOR] = "images\\MenuItems\\Select_color.jpg";
 	MenuItemImages[ITM_TYPE_COLOR] = "images\\MenuItems\\Select_type_color.jpg";
 	MenuItemImages[ITM_TO_DRAW] = "images\\MenuItems\\Switch.jpg";
-	MenuItemImages[ITM_EXIT] = "images\\MenuItems\\Exit.jpg";
+	MenuItemImages[PLAY_ITM_EXIT] = "images\\MenuItems\\Exit.jpg";
 
 	for (int i = 0; i<PLAY_ITM_COUNT; i++)
 		pWind->DrawImage(MenuItemImages[i], i*UI.MenuItemWidth, 0, UI.MenuItemWidth, UI.ToolBarHeight);

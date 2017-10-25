@@ -114,7 +114,6 @@ ActionType Input::GetUserAction() const
 	return TO_PLAY;	//just for now. This should be updated
 }
 
-}
 /////////////////////////////////
 	
 Input::~Input()

@@ -42,7 +42,7 @@ enum PlayMenuItem //The items of the Play menu (you should add more items)
 	//If you want to change the menu items order, change the order here
 	ITM_TYPE,
 	ITM_COLOR,
-	ITM_COLOR_TYPE,
+	ITM_TYPE_COLOR,
 	ITM_TO_DRAW,
 	PLAY_ITM_EXIT,
 	//TODO: Add more items names here
