@@ -92,7 +92,7 @@ ActionType Input::GetUserAction() const
 			{
 			case ITM_TYPE: return PLAY_TYPE;
 			case ITM_COLOR: return PLAY_COLOR;
-			case ITM_TYPE: return PLAY_COLOR_TYPE;
+			case ITM_TYPE_COLOR: return PLAY_TYPE_COLOR;
 			case PLAY_ITM_EXIT: return EXIT;
 			case ITM_TO_DRAW: return TO_DRAW;
 			default: return EMPTY;	//A click on empty place in desgin toolbar
